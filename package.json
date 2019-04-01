@@ -1,0 +1,17 @@
+{
+  "name": "george_garden_sass",
+  "version": "1.0.0",
+  "description": "Georges Garden Diploma project in SASS",
+  "main": "index.js",
+  "repository": "https://github.com/Robbozinoz/georges_garden_sass.git",
+  "author": "John Robertson",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "css": "node-sass src/main.scss dest/app.css",
+    "watch:css": "yarn css -- -w"
+  },
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
