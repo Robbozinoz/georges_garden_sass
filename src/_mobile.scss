@@ -1,0 +1,25 @@
+@include mediaSm {
+    .marketing-site-footer {
+        margin-bottom: 2rem;
+        .grid-x {
+            .cell {
+                justify-content: center !important;
+            }
+        }
+    }
+
+    .marketing-site-footer-bottom-links {
+        justify-content: center !important;
+    }
+
+    .marketing-site-footer-bottom .cell > p {
+        justify-content: center !important;
+    }
+  }
+
+@include mediaMd {
+    .marketing-site-footer-bottom-links {
+        justify-content: center;
+        text-align: center;
+    }
+  }

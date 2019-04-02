@@ -1,3 +1,154 @@
+
+@import "config";
+
 body {
-    background: red;
+    background: white;
 }
+
+/*Navbar controls*/
+
+.scrollhide-nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  transition: transform $scrollhide-nav-transition-speed cubic-bezier(0.86, 0, 0.07, 1);
+
+  &.hidden {
+    transform: translateY(-100%);
+  }
+}
+
+/*Footer controls - large display*/
+.marketing-site-footer {
+    background: $quaternary-color;
+    color: lighten($quaternary-color, 40%);
+    padding: 2rem 1rem 0 1rem;
+  
+    .marketing-site-footer-menu-social a {
+      color: $primary-color;
+    }
+  
+    .cell-block {
+      margin-bottom: 30px;
+    }
+  
+    > .grid-x {
+      margin-bottom: 1rem;
+      .cell p {
+          margin-right: 0.5rem;
+      }
+    }
+
+  }
+  
+  .marketing-site-footer-name {
+    color: $primary-color;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  
+  .marketing-site-footer-title {
+    color: $primary-color;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+  
+  .marketing-site-footer-block {
+    display: flex;
+    margin-bottom: 1rem;
+  
+    .fa {
+      font-size: 2rem;
+      color: darken($quaternary-color, 20%);
+    }
+  
+    p {
+      margin-left: 1rem;
+      line-height: 1.125rem;
+    }
+  }
+  
+  .marketing-site-footer-bottom {
+    background: darken($quaternary-color, 0%);
+    padding: 1rem 0;
+  
+    p, .menu {
+      margin-bottom: 0;
+    }
+  
+    .marketing-site-footer-bottom-links {
+      justify-content: flex-end;
+  
+      a {
+        color: lighten($quaternary-color, 40%);
+      }
+    }
+  }
+  
+  /*Product cards*/
+.card-product-hover-title {
+  font-size: $card-product-hover-title-font-size;
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+}
+
+.card-product-hover {
+  position: relative;
+  line-height: 1.2rem;
+  @include ease;
+}
+
+.card-product-hover-icons {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card-product-hover-icons a i {
+  display: block;
+  font-size: 1.5rem;
+  line-height: rem-calc(40);
+  width: rem-calc(40);
+  background-color: $primary-color;
+  text-align: center;
+  color: $quinary-color;
+}
+
+.card-product-hover-icons a i:hover {
+  background-color: $quaternary-color;
+  color: $primary-color;
+  cursor: pointer;
+}
+
+.card-product-hover-icons a {
+  margin: 2px;
+  opacity: 0;
+  transform: translateY(50%);
+  @include ease;
+}
+
+.card-product-hover:hover a,
+.card-product-hover.hover a {
+  @include ease;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.card-product-hover:hover a:nth-child(2),
+.card-product-hover.hover a:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.card-product-hover:hover a:nth-child(3),
+.card-product-hover.hover a:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+@import "mobile";

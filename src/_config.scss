@@ -1,0 +1,38 @@
+$scrollhide-nav-transition-speed: 1s;
+$primary-color: #fff;
+$secondary-color: rgb(76, 97, 165);
+$tertiary-color: #d8b91f;
+$card-product-hover-price-color: $primary-color;
+$card-product-hover-font-size: 1.5rem;
+$card-product-hover-title-font-size: 1.4rem;
+$quinary-color: #000000;
+$quaternary-color:  #2c3840;
+
+//media query mixins
+@mixin mediaSm {
+    @media screen and (max-width: 500px) {
+      @content;
+    }
+  }
+  
+  @mixin mediaMd {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin mediaLg {
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+      @content;
+    }
+  }
+  
+  @mixin mediaXl {
+    @media screen and (min-width: 1171px) {
+      @content;
+    }
+  }
+
+  @mixin ease {
+    transition: all 0.35s ease;
+  }
