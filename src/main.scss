@@ -89,6 +89,7 @@ body {
   /*Product cards*/
 .card-product-hover-title {
   font-size: $card-product-hover-title-font-size;
+  color: $secondary-color;
   font-weight: 400;
   margin-bottom: 0.2rem;
 }
@@ -98,6 +99,17 @@ body {
   line-height: 1.2rem;
   @include ease;
 }
+
+  .card-product-hover-details {
+    @include card-section;
+  }
+  
+  .card-product-hover-price {
+    margin: 0.5rem 0;
+    font-weight: 700;
+    color: $quinary-color;
+    font-size: $card-product-hover-font-size;
+  }
 
 .card-product-hover-icons {
   position: absolute;
@@ -150,5 +162,197 @@ body {
 .card-product-hover.hover a:nth-child(3) {
   transition-delay: 0.2s;
 }
+
+/*Shopping cart*/
+.product-details {
+    background-color: $primary-color;
+    padding: 2rem;
+  }
+  
+  .product-option-selection{
+    
+    input[type=radio] {
+      display: none; 
+      margin: 10px;
+    }
+    
+    input[type=radio] + label {
+      display: inline-block;
+      margin: -2px;
+      border-color: $secondary-color;
+      margin-right: 0.3rem;
+      margin-top: 2px;
+      margin-bottom: 10px;
+      padding: 0.4rem;
+    }
+    
+    input[type=radio]:checked + label {     
+      background: lighten($tertiary-color, 43%);
+      border: 1px solid $secondary-color;
+      border-radius: 3px;
+      color: lighten($quinary-color, 20%);
+      font-weight: 600;
+      padding: 0.3rem;
+    }
+  }
+  
+  .product-details-add-to-cart {
+    margin-top: 1rem;
+    background-color: $primary-color;
+
+    border: solid 1px $quaternary-color;
+    margin-bottom: 25px;
+    padding: 22px;
+    
+    .in-stock {
+      color: #1eac60;
+      font-weight: 700;
+    }
+    
+    .dim-text {
+      color: $quaternary-color;
+    }
+    
+    .price {
+      float: right;
+      font-weight: 600;
+      font-size: 24px;
+      color: darken($quaternary-color,25%);
+    }
+    
+    .qty {
+      width: 3rem;
+      display: inline-block;
+      text-align: center;
+      margin-left: 15px;
+      margin-bottom: 0;
+    }
+    
+    .button {
+      margin-bottom: 0;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  }
+
+  /*Checkout*/
+
+  .checkout-summary {
+    max-width: 60rem;
+    background-color: $primary-color;
+
+  }
+  
+  .checkout-summary-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid lighten($quaternary-color, 40%);;
+  }
+  
+  .checkout-summary-item {
+    border-left: 1px solid lighten($quaternary-color, 40%);
+    border-right: 1px solid lighten($quaternary-color, 40%);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid lighten($quaternary-color, 40%);
+    .item-name,
+    .item-price {
+      padding: 0 1rem;
+      p {
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .title {
+      font-weight: bold;
+    }
+  }
+  
+  .checkout-summary-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid lighten($quaternary-color, 40%);;
+    border-top: none;
+  }
+  
+  
+  /*Contact form*/
+.contact-us-section {
+  padding: $site-padding;
+  background: $body-background;
+
+  .contact-us-section-left {
+    padding-right: $site-padding;
+    border-bottom: 2px solid lighten($quaternary-color, 40%);;
+    padding-bottom: $site-padding;
+    margin-bottom: $site-padding;
+  }
+
+  .contact-us-section-right {
+    padding-left: $site-padding;
+    padding-right: $site-padding;
+  }
+
+  .contact-us-header {
+    margin-bottom: $site-padding;
+    margin-left: 4rem;;
+  }
+
+  .contact-us-header-form {
+    margin-bottom: $site-padding;
+    margin-left: $site-padding;
+  }
+}
+
+.contact-us-form {
+  input[type=text],
+  input[type=email],
+  textarea {
+    margin-bottom: $site-padding;
+  }
+}
+
+.contact-us-form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  input[type=submit] {
+    border-radius: 5000px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .contact-us-file-button {
+    background: transparent;
+    color: $tertiary-color;
+  }
+}
+
+.contact-us-list {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 4rem;
+
+  li {
+    a {
+      color: $quinary-color;
+    }
+  }
+
+  li::before {
+    margin-right: 2rem;
+    font-size: 2rem;
+    vertical-align: middle;
+    color: $tertiary-color;
+  }
+}
+
+
+  
+  
 
 @import "mobile";

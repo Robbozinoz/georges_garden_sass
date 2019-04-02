@@ -2,11 +2,14 @@ $scrollhide-nav-transition-speed: 1s;
 $primary-color: #fff;
 $secondary-color: rgb(76, 97, 165);
 $tertiary-color: #d8b91f;
-$card-product-hover-price-color: $primary-color;
 $card-product-hover-font-size: 1.5rem;
 $card-product-hover-title-font-size: 1.4rem;
 $quinary-color: #000000;
 $quaternary-color:  #2c3840;
+$body-background: $primary-color;
+$site-padding: 2rem;
+/*$card-product-hover-price-color: $quinary-color;
+$card-product-hover-title: $secondary-color;*/
 
 //media query mixins
 @mixin mediaSm {
@@ -34,5 +37,11 @@ $quaternary-color:  #2c3840;
   }
 
   @mixin ease {
-    transition: all 0.35s ease;
+ transition: all 0.35s ease;
   }
+
+  @mixin card-section {
+    padding: 5px;
+    color: $tertiary-color;
+    font-size: 2rem;
+  } 
