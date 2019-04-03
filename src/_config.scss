@@ -2,12 +2,12 @@ $scrollhide-nav-transition-speed: 1s;
 $primary-color: #fff;
 $secondary-color: rgb(76, 97, 165);
 $tertiary-color: #d8b91f;
-$card-product-hover-font-size: 1.5rem;
-$card-product-hover-title-font-size: 1.4rem;
 $quinary-color: #000000;
 $quaternary-color:  #2c3840;
 $body-background: $primary-color;
 $site-padding: 2rem;
+$primary-font-size: 2rem;
+$secondary-font-size: 1.5rem;
 /*$card-product-hover-price-color: $quinary-color;
 $card-product-hover-title: $secondary-color;*/
 
@@ -43,5 +43,5 @@ $card-product-hover-title: $secondary-color;*/
   @mixin card-section {
     padding: 5px;
     color: $tertiary-color;
-    font-size: 2rem;
+    font-size: $primary-font-size
   } 

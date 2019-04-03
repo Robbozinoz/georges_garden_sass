@@ -1,7 +1,26 @@
 /*$card-product-hover-price-color: $quinary-color;
 $card-product-hover-title: $secondary-color;*/
 body {
-  background: white; }
+  background: #fff; }
+
+button {
+  background-color: #4c61a5 !important; }
+
+a.button {
+  background-color: #d8b91f; }
+
+/*icon styles*/
+.fi-social-facebook, .fi-shopping-cart {
+  color: #4c61a5;
+  font-size: 2rem; }
+
+.fi-social-youtube, .fi-star, .fi-social-instagram {
+  color: #fff;
+  font-size: 2rem; }
+
+.fi-social-twitter, .fi-share, .fi-social-pinterest {
+  color: #d8b91f;
+  font-size: 2rem; }
 
 /*Navbar controls*/
 .scrollhide-nav {
@@ -59,7 +78,7 @@ body {
 
 /*Product cards*/
 .card-product-hover-title {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: #4c61a5;
   font-weight: 400;
   margin-bottom: 0.2rem; }

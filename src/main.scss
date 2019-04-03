@@ -2,8 +2,32 @@
 @import "config";
 
 body {
-    background: white;
+    background: $primary-color;
 }
+
+button {
+  background-color: $secondary-color !important;
+}
+
+a.button{
+  background-color: $tertiary-color;
+}
+
+  /*icon styles*/
+  .fi-social-facebook, .fi-shopping-cart {
+    color: $secondary-color;
+    font-size: $primary-font-size;
+  }
+
+  .fi-social-youtube, .fi-star, .fi-social-instagram {
+    color: $primary-color;
+    font-size: $primary-font-size;
+  }
+
+  .fi-social-twitter, .fi-share, .fi-social-pinterest {
+    color: $tertiary-color;
+    font-size: $primary-font-size;
+  }
 
 /*Navbar controls*/
 
@@ -45,7 +69,7 @@ body {
   .marketing-site-footer-name {
     color: $primary-color;
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: $primary-font-size;
   }
   
   .marketing-site-footer-title {
@@ -59,7 +83,7 @@ body {
     margin-bottom: 1rem;
   
     .fa {
-      font-size: 2rem;
+      font-size: $primary-font-size;
       color: darken($quaternary-color, 20%);
     }
   
@@ -88,7 +112,7 @@ body {
   
   /*Product cards*/
 .card-product-hover-title {
-  font-size: $card-product-hover-title-font-size;
+  font-size: $secondary-font-size;
   color: $secondary-color;
   font-weight: 400;
   margin-bottom: 0.2rem;
@@ -108,7 +132,7 @@ body {
     margin: 0.5rem 0;
     font-weight: 700;
     color: $quinary-color;
-    font-size: $card-product-hover-font-size;
+    font-size: $secondary-font-size;
   }
 
 .card-product-hover-icons {
@@ -166,7 +190,7 @@ body {
 /*Shopping cart*/
 .product-details {
     background-color: $primary-color;
-    padding: 2rem;
+    padding: $site-padding;
   }
   
   .product-option-selection{
@@ -236,7 +260,6 @@ body {
   }
 
   /*Checkout*/
-
   .checkout-summary {
     max-width: 60rem;
     background-color: $primary-color;
@@ -345,7 +368,7 @@ body {
 
   li::before {
     margin-right: 2rem;
-    font-size: 2rem;
+    font-size: $primary-font-size;
     vertical-align: middle;
     color: $tertiary-color;
   }
