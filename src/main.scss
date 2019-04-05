@@ -11,11 +11,15 @@ a, h5, .lead {
 
 h4 {
   font-weight: 600;
-  color: $tertiary-color;
+  color: $secondary-color;
 }
 
 button {
   background-color: $secondary-color !important;
+}
+
+button:hover {
+  background-color: $senary-color !important;
 }
 
 .is-active {
@@ -23,8 +27,14 @@ button {
 }
 
 a.button{
-  background-color: $tertiary-color;
+  background-color: $secondary-color;
 }
+
+a.button:hover {
+  background-color: $senary-color !important;
+}
+
+
 
   /*icon styles*/
   .fi-social-facebook, .fi-shopping-cart, .fi-map:before {
@@ -32,13 +42,18 @@ a.button{
     font-size: $primary-font-size;
   }
 
-  .fi-social-youtube, .fi-star, .fi-social-instagram, .fi-telephone:before {
+  .fi-social-youtube, .fi-star, .fi-social-instagram {
     color: $primary-color;
     font-size: $primary-font-size;
   }
 
   .fi-social-twitter, .fi-share, .fi-social-pinterest, .fi-mail:before {
     color: $tertiary-color;
+    font-size: $primary-font-size;
+  }
+
+  .fi-telephone:before {
+    color: $senary-color;
     font-size: $primary-font-size;
   }
 
@@ -50,16 +65,29 @@ a.button{
   top: 0;
   left: 0;
   transition: transform $scrollhide-nav-transition-speed cubic-bezier(0.86, 0, 0.07, 1);
+  background-color: $quaternary-color;
 
   &.hidden {
     transform: translateY(-100%);
   }
 }
 
+.dropdown li a,.menuitem a, .menu-text{
+  color: $primary-color !important;
+}
+
+.dropdown li a:hover {
+  color: $senary-color !important;
+}
+
+.top-bar, .top-bar-left, .top-bar ul {
+  background-color: $quaternary-color !important;
+}
+
 /*Footer controls - large display*/
 .marketing-site-footer {
     background: $quaternary-color;
-    color: lighten($quaternary-color, 40%);
+    color: lighten($quaternary-color, 80%);
     padding: 2rem 1rem 0 1rem;
   
     .marketing-site-footer-menu-social a {
@@ -118,7 +146,7 @@ a.button{
       justify-content: flex-end;
   
       a {
-        color: lighten($quaternary-color, 40%);
+        color: lighten($quaternary-color, 80%);
       }
     }
   }
@@ -224,7 +252,7 @@ a.button{
     }
     
     input[type=radio]:checked + label {     
-      background: lighten($tertiary-color, 43%);
+      background: $senary-color;
       border: 1px solid $secondary-color;
       border-radius: 3px;
       color: lighten($quinary-color, 20%);
@@ -281,7 +309,7 @@ a.button{
     button {
       font-size: 1rem;
       font-weight: 600;
-      background-color: $tertiary-color !important;
+      /*background-color: $secondary-color !important;*/
     }
 
   }
@@ -349,7 +377,6 @@ a.button{
     margin-left: $site-padding;
   }
 }
-
 .contact-us-form {
   input[type=text],
   input[type=email],
@@ -367,6 +394,11 @@ a.button{
     border-radius: 5000px;
     padding-left: 2rem;
     padding-right: 2rem;
+    background-color: $secondary-color;
+  }
+
+  input[type=submit]:hover {
+    background-color: $senary-color;
   }
 
   .contact-us-file-button {

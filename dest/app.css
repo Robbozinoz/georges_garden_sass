@@ -4,32 +4,42 @@ body {
   background: #fff; }
 
 a, h5, .lead {
-  color: #4c61a5; }
+  color: #6B9940; }
 
 h4 {
   font-weight: 600;
-  color: #d8b91f; }
+  color: #6B9940; }
 
 button {
-  background-color: #4c61a5 !important; }
+  background-color: #6B9940 !important; }
+
+button:hover {
+  background-color: #904099 !important; }
 
 .is-active {
-  background-color: #d8b91f !important; }
+  background-color: #ADE577 !important; }
 
 a.button {
-  background-color: #d8b91f; }
+  background-color: #6B9940; }
+
+a.button:hover {
+  background-color: #904099 !important; }
 
 /*icon styles*/
 .fi-social-facebook, .fi-shopping-cart, .fi-map:before {
-  color: #4c61a5;
+  color: #6B9940;
   font-size: 2rem; }
 
-.fi-social-youtube, .fi-star, .fi-social-instagram, .fi-telephone:before {
+.fi-social-youtube, .fi-star, .fi-social-instagram {
   color: #fff;
   font-size: 2rem; }
 
 .fi-social-twitter, .fi-share, .fi-social-pinterest, .fi-mail:before {
-  color: #d8b91f;
+  color: #ADE577;
+  font-size: 2rem; }
+
+.fi-telephone:before {
+  color: #904099;
   font-size: 2rem; }
 
 /*Navbar controls*/
@@ -38,14 +48,24 @@ a.button {
   right: 0;
   top: 0;
   left: 0;
-  transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1); }
+  transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+  background-color: #46114D; }
   .scrollhide-nav.hidden {
     transform: translateY(-100%); }
 
+.dropdown li a, .menuitem a, .menu-text {
+  color: #fff !important; }
+
+.dropdown li a:hover {
+  color: #904099 !important; }
+
+.top-bar, .top-bar-left, .top-bar ul {
+  background-color: #46114D !important; }
+
 /*Footer controls - large display*/
 .marketing-site-footer {
-  background: #2c3840;
-  color: #8aa0ae;
+  background: #46114D;
+  color: #fdf8fe;
   padding: 2rem 1rem 0 1rem; }
   .marketing-site-footer .marketing-site-footer-menu-social a {
     color: #fff; }
@@ -71,25 +91,25 @@ a.button {
   margin-bottom: 1rem; }
   .marketing-site-footer-block .fa {
     font-size: 2rem;
-    color: #020304; }
+    color: black; }
   .marketing-site-footer-block p {
     margin-left: 1rem;
     line-height: 1.125rem; }
 
 .marketing-site-footer-bottom {
-  background: #2c3840;
+  background: #46114d;
   padding: 1rem 0; }
   .marketing-site-footer-bottom p, .marketing-site-footer-bottom .menu {
     margin-bottom: 0; }
   .marketing-site-footer-bottom .marketing-site-footer-bottom-links {
     justify-content: flex-end; }
     .marketing-site-footer-bottom .marketing-site-footer-bottom-links a {
-      color: #8aa0ae; }
+      color: #fdf8fe; }
 
 /*Product cards*/
 .card-product-hover-title {
   font-size: 1.5rem;
-  color: #4c61a5;
+  color: #6B9940;
   font-weight: 400;
   margin-bottom: 0.2rem; }
 
@@ -100,7 +120,7 @@ a.button {
 
 .card-product-hover-details {
   padding: 5px;
-  color: #d8b91f;
+  color: #ADE577;
   font-size: 2rem; }
 
 .card-product-hover-price {
@@ -130,7 +150,7 @@ a.button {
   color: #000000; }
 
 .card-product-hover-icons a i:hover {
-  background-color: #2c3840;
+  background-color: #46114D;
   color: #fff;
   cursor: pointer; }
 
@@ -166,15 +186,15 @@ a.button {
 .product-option-selection input[type=radio] + label {
   display: inline-block;
   margin: -2px;
-  border-color: #4c61a5;
+  border-color: #6B9940;
   margin-right: 0.3rem;
   margin-top: 0.25rem;
   margin-bottom: 1.5rem;
   padding: 0.4rem; }
 
 .product-option-selection input[type=radio]:checked + label {
-  background: #faf4d9;
-  border: 1px solid #4c61a5;
+  background: #904099;
+  border: 1px solid #6B9940;
   border-radius: 3px;
   color: #333333;
   font-weight: 600;
@@ -183,19 +203,19 @@ a.button {
 .product-details-add-to-cart {
   margin-top: 1rem;
   background-color: #fff;
-  border: solid 1px #2c3840;
+  border: solid 1px #46114D;
   margin-bottom: 3rem;
   padding: 1.5rem; }
   .product-details-add-to-cart .in-stock {
     color: #000000;
     font-weight: 700; }
   .product-details-add-to-cart .dim-text {
-    color: #2c3840; }
+    color: #46114D; }
   .product-details-add-to-cart .price {
     float: right;
     font-weight: 600;
     font-size: 1.5rem;
-    color: #242e4e; }
+    color: #2c3f1a; }
   .product-details-add-to-cart .qty {
     width: 3rem;
     display: inline-block;
@@ -215,21 +235,21 @@ a.button {
   .checkout-summary button {
     font-size: 1rem;
     font-weight: 600;
-    background-color: #d8b91f !important; }
+    /*background-color: $secondary-color !important;*/ }
 
 .checkout-summary-title {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  border: 1px solid #8aa0ae; }
+  border: 1px solid #c951d9; }
 
 .checkout-summary-item {
-  border-left: 1px solid #8aa0ae;
-  border-right: 1px solid #8aa0ae;
+  border-left: 1px solid #c951d9;
+  border-right: 1px solid #c951d9;
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  border-bottom: 1px solid #8aa0ae; }
+  border-bottom: 1px solid #c951d9; }
   .checkout-summary-item .item-name,
   .checkout-summary-item .item-price {
     padding: 0 1rem; }
@@ -244,7 +264,7 @@ a.button {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  border: 1px solid #8aa0ae;
+  border: 1px solid #c951d9;
   border-top: none; }
 
 /*Contact form*/
@@ -253,7 +273,7 @@ a.button {
   background: #fff; }
   .contact-us-section .contact-us-section-left {
     padding-right: 2rem;
-    border-bottom: 2px solid #8aa0ae;
+    border-bottom: 2px solid #c951d9;
     padding-bottom: 2rem;
     margin-bottom: 2rem; }
   .contact-us-section .contact-us-section-right {
@@ -278,10 +298,13 @@ a.button {
   .contact-us-form-actions input[type=submit] {
     border-radius: 5000px;
     padding-left: 2rem;
-    padding-right: 2rem; }
+    padding-right: 2rem;
+    background-color: #6B9940; }
+  .contact-us-form-actions input[type=submit]:hover {
+    background-color: #904099; }
   .contact-us-form-actions .contact-us-file-button {
     background: transparent;
-    color: #d8b91f; }
+    color: #ADE577; }
 
 .contact-us-list {
   list-style-type: none;
@@ -293,7 +316,7 @@ a.button {
     margin-right: 2rem;
     font-size: 2rem;
     vertical-align: middle;
-    color: #d8b91f; }
+    color: #ADE577; }
 
 @media screen and (max-width: 500px) {
   .marketing-site-footer {
