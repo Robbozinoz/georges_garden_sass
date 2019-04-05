@@ -3,22 +3,32 @@ $card-product-hover-title: $secondary-color;*/
 body {
   background: #fff; }
 
+a, h5, .lead {
+  color: #4c61a5; }
+
+h4 {
+  font-weight: 600;
+  color: #d8b91f; }
+
 button {
   background-color: #4c61a5 !important; }
+
+.is-active {
+  background-color: #d8b91f !important; }
 
 a.button {
   background-color: #d8b91f; }
 
 /*icon styles*/
-.fi-social-facebook, .fi-shopping-cart {
+.fi-social-facebook, .fi-shopping-cart, .fi-map:before {
   color: #4c61a5;
   font-size: 2rem; }
 
-.fi-social-youtube, .fi-star, .fi-social-instagram {
+.fi-social-youtube, .fi-star, .fi-social-instagram, .fi-telephone:before {
   color: #fff;
   font-size: 2rem; }
 
-.fi-social-twitter, .fi-share, .fi-social-pinterest {
+.fi-social-twitter, .fi-share, .fi-social-pinterest, .fi-mail:before {
   color: #d8b91f;
   font-size: 2rem; }
 
@@ -107,7 +117,7 @@ a.button {
   right: 0;
   padding: 0.5rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: cell;
   justify-content: flex-start; }
 
 .card-product-hover-icons a i {
@@ -125,7 +135,7 @@ a.button {
   cursor: pointer; }
 
 .card-product-hover-icons a {
-  margin: 2px;
+  margin: 0.25rem;
   opacity: 0;
   transform: translateY(50%);
   transition: all 0.35s ease; }
@@ -151,15 +161,15 @@ a.button {
 
 .product-option-selection input[type=radio] {
   display: none;
-  margin: 10px; }
+  margin: 2rem; }
 
 .product-option-selection input[type=radio] + label {
   display: inline-block;
   margin: -2px;
   border-color: #4c61a5;
   margin-right: 0.3rem;
-  margin-top: 2px;
-  margin-bottom: 10px;
+  margin-top: 0.25rem;
+  margin-bottom: 1.5rem;
   padding: 0.4rem; }
 
 .product-option-selection input[type=radio]:checked + label {
@@ -174,23 +184,23 @@ a.button {
   margin-top: 1rem;
   background-color: #fff;
   border: solid 1px #2c3840;
-  margin-bottom: 25px;
-  padding: 22px; }
+  margin-bottom: 3rem;
+  padding: 1.5rem; }
   .product-details-add-to-cart .in-stock {
-    color: #1eac60;
+    color: #000000;
     font-weight: 700; }
   .product-details-add-to-cart .dim-text {
     color: #2c3840; }
   .product-details-add-to-cart .price {
     float: right;
     font-weight: 600;
-    font-size: 24px;
-    color: black; }
+    font-size: 1.5rem;
+    color: #242e4e; }
   .product-details-add-to-cart .qty {
     width: 3rem;
     display: inline-block;
     text-align: center;
-    margin-left: 15px;
+    margin-left: 1rem;
     margin-bottom: 0; }
   .product-details-add-to-cart .button {
     margin-bottom: 0;
@@ -200,7 +210,12 @@ a.button {
 /*Checkout*/
 .checkout-summary {
   max-width: 60rem;
-  background-color: #fff; }
+  background-color: #fff;
+  justify-content: center; }
+  .checkout-summary button {
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #d8b91f !important; }
 
 .checkout-summary-title {
   display: flex;

@@ -5,8 +5,21 @@ body {
     background: $primary-color;
 }
 
+a, h5, .lead {
+  color: $secondary-color;
+}
+
+h4 {
+  font-weight: 600;
+  color: $tertiary-color;
+}
+
 button {
   background-color: $secondary-color !important;
+}
+
+.is-active {
+  background-color: $tertiary-color !important;
 }
 
 a.button{
@@ -14,17 +27,17 @@ a.button{
 }
 
   /*icon styles*/
-  .fi-social-facebook, .fi-shopping-cart {
+  .fi-social-facebook, .fi-shopping-cart, .fi-map:before {
     color: $secondary-color;
     font-size: $primary-font-size;
   }
 
-  .fi-social-youtube, .fi-star, .fi-social-instagram {
+  .fi-social-youtube, .fi-star, .fi-social-instagram, .fi-telephone:before {
     color: $primary-color;
     font-size: $primary-font-size;
   }
 
-  .fi-social-twitter, .fi-share, .fi-social-pinterest {
+  .fi-social-twitter, .fi-share, .fi-social-pinterest, .fi-mail:before {
     color: $tertiary-color;
     font-size: $primary-font-size;
   }
@@ -143,7 +156,7 @@ a.button{
   right: 0;
   padding: 0.5rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: cell;
   justify-content: flex-start;
 }
 
@@ -164,7 +177,7 @@ a.button{
 }
 
 .card-product-hover-icons a {
-  margin: 2px;
+  margin: 0.25rem;
   opacity: 0;
   transform: translateY(50%);
   @include ease;
@@ -197,7 +210,7 @@ a.button{
     
     input[type=radio] {
       display: none; 
-      margin: 10px;
+      margin: 2rem;
     }
     
     input[type=radio] + label {
@@ -205,8 +218,8 @@ a.button{
       margin: -2px;
       border-color: $secondary-color;
       margin-right: 0.3rem;
-      margin-top: 2px;
-      margin-bottom: 10px;
+      margin-top: 0.25rem;
+      margin-bottom: 1.5rem;
       padding: 0.4rem;
     }
     
@@ -225,11 +238,11 @@ a.button{
     background-color: $primary-color;
 
     border: solid 1px $quaternary-color;
-    margin-bottom: 25px;
-    padding: 22px;
+    margin-bottom: 3rem;
+    padding: 1.5rem;
     
     .in-stock {
-      color: #1eac60;
+      color: $quinary-color;
       font-weight: 700;
     }
     
@@ -240,15 +253,15 @@ a.button{
     .price {
       float: right;
       font-weight: 600;
-      font-size: 24px;
-      color: darken($quaternary-color,25%);
+      font-size: 1.5rem;
+      color: darken($secondary-color,25%);
     }
     
     .qty {
       width: 3rem;
       display: inline-block;
       text-align: center;
-      margin-left: 15px;
+      margin-left: 1rem;
       margin-bottom: 0;
     }
     
@@ -263,6 +276,13 @@ a.button{
   .checkout-summary {
     max-width: 60rem;
     background-color: $primary-color;
+    justify-content: center;
+
+    button {
+      font-size: 1rem;
+      font-weight: 600;
+      background-color: $tertiary-color !important;
+    }
 
   }
   
@@ -374,8 +394,5 @@ a.button{
   }
 }
 
-
-  
-  
 
 @import "mobile";
