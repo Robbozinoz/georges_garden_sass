@@ -3,13 +3,14 @@ $card-product-hover-title: $secondary-color;*/
 body {
   background: #fff; }
 
-a, h5, .lead {
-  color: #6B9940; }
-
 h4 {
   font-weight: 600;
   color: #6B9940; }
 
+a, h5, .lead {
+  color: #6B9940; }
+
+/*Site wide button controllers using variables*/
 button {
   background-color: #6B9940 !important; }
 
@@ -24,6 +25,9 @@ a.button {
 
 a.button:hover {
   background-color: #904099 !important; }
+
+hr {
+  border-bottom: 1px solid #c951d9; }
 
 /*icon styles*/
 .fi-social-facebook, .fi-shopping-cart, .fi-map:before {
@@ -174,6 +178,10 @@ a.button:hover {
 .card-product-hover.hover a:nth-child(3) {
   transition-delay: 0.2s; }
 
+/*Top products section - homepage*/
+.media-object-section p {
+  padding-right: 2rem; }
+
 /*Shopping cart*/
 .product-details {
   background-color: #fff;
@@ -229,7 +237,7 @@ a.button:hover {
 
 /*Checkout*/
 .checkout-summary {
-  max-width: 60rem;
+  max-width: 100%;
   background-color: #fff;
   justify-content: center; }
   .checkout-summary button {
@@ -241,15 +249,15 @@ a.button:hover {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  border: 1px solid #c951d9; }
+  border: 1px solid #000000; }
 
 .checkout-summary-item {
-  border-left: 1px solid #c951d9;
-  border-right: 1px solid #c951d9;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  border-bottom: 1px solid #c951d9; }
+  border-bottom: 1px solid #000000; }
   .checkout-summary-item .item-name,
   .checkout-summary-item .item-price {
     padding: 0 1rem; }
@@ -264,7 +272,7 @@ a.button:hover {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  border: 1px solid #c951d9;
+  border: 1px solid #000000;
   border-top: none; }
 
 /*Contact form*/
@@ -273,7 +281,7 @@ a.button:hover {
   background: #fff; }
   .contact-us-section .contact-us-section-left {
     padding-right: 2rem;
-    border-bottom: 2px solid #c951d9;
+    border-bottom: 1px solid #c951d9;
     padding-bottom: 2rem;
     margin-bottom: 2rem; }
   .contact-us-section .contact-us-section-right {

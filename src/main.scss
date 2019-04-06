@@ -5,15 +5,17 @@ body {
     background: $primary-color;
 }
 
-a, h5, .lead {
-  color: $secondary-color;
-}
-
 h4 {
   font-weight: 600;
   color: $secondary-color;
 }
 
+a, h5, .lead {
+  color: $secondary-color;
+}
+
+
+/*Site wide button controllers using variables*/
 button {
   background-color: $secondary-color !important;
 }
@@ -34,6 +36,9 @@ a.button:hover {
   background-color: $senary-color !important;
 }
 
+hr {
+  border-bottom: 1px solid lighten($quaternary-color, 40%);
+}
 
 
   /*icon styles*/
@@ -228,6 +233,11 @@ a.button:hover {
   transition-delay: 0.2s;
 }
 
+/*Top products section - homepage*/
+.media-object-section p {
+  padding-right: $site-padding;
+}
+
 /*Shopping cart*/
 .product-details {
     background-color: $primary-color;
@@ -302,7 +312,7 @@ a.button:hover {
 
   /*Checkout*/
   .checkout-summary {
-    max-width: 60rem;
+    max-width: 100%;
     background-color: $primary-color;
     justify-content: center;
 
@@ -318,16 +328,16 @@ a.button:hover {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    border: 1px solid lighten($quaternary-color, 40%);;
+    border: 1px solid $quinary-color;
   }
   
   .checkout-summary-item {
-    border-left: 1px solid lighten($quaternary-color, 40%);
-    border-right: 1px solid lighten($quaternary-color, 40%);
+    border-left: 1px solid $quinary-color;
+    border-right: 1px solid $quinary-color;
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    border-bottom: 1px solid lighten($quaternary-color, 40%);
+    border-bottom: 1px solid $quinary-color;
     .item-name,
     .item-price {
       padding: 0 1rem;
@@ -345,7 +355,7 @@ a.button:hover {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    border: 1px solid lighten($quaternary-color, 40%);;
+    border: 1px solid $quinary-color;
     border-top: none;
   }
   
@@ -357,7 +367,7 @@ a.button:hover {
 
   .contact-us-section-left {
     padding-right: $site-padding;
-    border-bottom: 2px solid lighten($quaternary-color, 40%);;
+    border-bottom: 1px solid lighten($quaternary-color, 40%);
     padding-bottom: $site-padding;
     margin-bottom: $site-padding;
   }
