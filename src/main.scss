@@ -40,6 +40,14 @@ hr {
   border-bottom: 1px solid lighten($quaternary-color, 40%);
 }
 
+.z-control {
+  z-index: $z-index-control;
+}
+
+.z-control-2 {
+  z-index: $z-index-control-2;
+}
+
 
   /*icon styles*/
   .fi-social-facebook, .fi-shopping-cart, .fi-map:before {
@@ -207,6 +215,7 @@ hr {
   background-color: $quaternary-color;
   color: $primary-color;
   cursor: pointer;
+  z-index: $z-index-control;
 }
 
 .card-product-hover-icons a {

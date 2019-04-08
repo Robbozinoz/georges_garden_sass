@@ -29,6 +29,12 @@ a.button:hover {
 hr {
   border-bottom: 1px solid #c951d9; }
 
+.z-control {
+  z-index: 2; }
+
+.z-control-2 {
+  z-index: 1; }
+
 /*icon styles*/
 .fi-social-facebook, .fi-shopping-cart, .fi-map:before {
   color: #6B9940;
@@ -156,7 +162,8 @@ hr {
 .card-product-hover-icons a i:hover {
   background-color: #46114D;
   color: #fff;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 2; }
 
 .card-product-hover-icons a {
   margin: 0.25rem;
