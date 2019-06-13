@@ -34,7 +34,7 @@ a.button:hover {
 .close-button {
   color: #46114D; }
   .close-button span {
-    background-color: #e6e6e6; }
+    background-color: #fff; }
 
 aside {
   background: #fff !important; }
