@@ -102,6 +102,9 @@ hr {
 .top-bar ul {
   background-color: #46114D !important; }
 
+.multilevel-accordion-menu li input {
+  margin-bottom: 1rem; }
+
 /*Footer controls - large display*/
 .marketing-site-footer {
   background: #46114D;
