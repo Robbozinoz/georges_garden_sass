@@ -13,6 +13,10 @@ a,
 h5,
 .lead {
   color: $secondary-color;
+
+  :hover {
+    color: $quaternary-color;
+  }
 }
 
 
@@ -134,6 +138,10 @@ hr {
 
 .multilevel-accordion-menu li input {
   margin-bottom: 1rem;
+}
+
+.is-submenu-item a {
+  color: $quaternary-color
 }
 
 
