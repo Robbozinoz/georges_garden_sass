@@ -4,7 +4,7 @@ body {
   background: #fff;
   font-family: 'Rokkitt', serif; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, a {
   font-family: 'Noto Sans', sans-serif; }
 
 h4 {
@@ -13,6 +13,9 @@ h4 {
 
 a:focus, a:hover {
   color: #46114D; }
+
+p {
+  font-size: 1.2rem; }
 
 a,
 h5,
