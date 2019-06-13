@@ -1,117 +1,197 @@
 <!doctype html>
 <html class="no-js" lang="en">
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Garden Center</title>
-  <link rel="stylesheet" href="dest/foundation.min.css">
-  <link rel="stylesheet" href="dest/app.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
-  <link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet'
-    type='text/css'>
-</head>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Garden Center</title>
+       <!--<link rel="stylesheet" href="dest/foundation.min.css">-->
+       <link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet'
+       type='text/css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation.min.css">
+        <link rel="stylesheet" href="dest/app.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
+      </head>
 
 <body>
-  <!--Sticky navbar with javascript and search bar-->
-  <nav class="scrollhide-nav z-control">
-    <div class="top-bar">
-      <div class="top-bar-left">
-        <ul class="dropdown menu" data-dropdown-menu>
-          <li class="menu-text">Georges Garden</li>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li><a href="products.html">Products</a>
-          </li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="top-bar-right">
-        <ul class="menu">
-          <li><input type="search" placeholder="Search"></li>
-          <li><button type="button" class="button">Search</button></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!--Carousel of images-->
-  <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit
-    data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
-    <ul class="orbit-container">
-      <button class="orbit-previous z-control-2"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-      <button class="orbit-next z-control-2"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
-      <li class="is-active orbit-slide">
-        <img class="orbit-image" src="images/image1_2k.jpg" alt="Plant">
-      </li>
-      <li class="orbit-slide">
-        <img class="orbit-image" src="images/image2_2k.jpg" alt="Plant">
-      </li>
-      <li class="orbit-slide">
-        <img class="orbit-image" src="images/image3_2k.jpg" alt="Plant">
-      </li>
-    </ul>
-    <nav class="orbit-bullets">
-      <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span
-          class="show-for-sr">Current Slide</span></button>
-      <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-      <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
-    </nav>
-  </div>
-  <br>
-  <article class="grid-container">
-    <div class="grid-x grid-margin-x">
-      <div class="cell align-center">
-        <div class="product-details column medium-6 center-text-for-small-only">
-          <h1>Product Name</h1>
-          <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id magna ac
-            quam semper.deta</p>
-          <div class="grid-x">
-            <div class="cell small-12 large-6">
-              <h6 class="product-color-title">Colour</h6>
-              <form class="product-option-selection">
-                <input type="radio" name="radios" value="red" id="radio1" checked>
-                <label for="radio1" class=" dark-hollow expand"><img src="images/lav_mina_opt.jpg"
-                    alt="Plant" /></label>
-                <input type="radio" name="radios" value="blue" id="radio2">
-                <label for="radio2" class=" dark-hollow expand"><img src="images/purple_mina_opt.jpg"
-                    alt="Plant" /></label>
-                <input type="radio" name="radios" value="yellow" id="radio3">
-                <label for="radio3" class=" dark-hollow expand"><img src="images/yellow_mina_opt.jpg"
-                    alt="Plant" /></label>
-                <input type="radio" name="radios" value="orange" id="radio4">
-                <label for="radio4" class=" dark-hollow expand"><img src="images/chamo_mina_opt.jpg"
-                    alt="Plant" /></label>
-              </form>
-            </div>
-            <div class="cell small-12 large-6">
-              <h6 class="product-color-title">Size</h6>
-              <form class="product-option-selection">
-                <select>
-                  <option value="husker">Small</option>
-                  <option value="starbuck">Medium</option>
-                  <option value="hotdog">Large</option>
-                  <option value="apollo">X-Large</option>
-                  <option value="apollo">XX-Large</option>
-                </select>
-              </form>
-            </div>
-          </div>
-          <div class="product-details-add-to-cart">
-            <p><span class="in-stock">In Stock</span> <span class="dim-text">(Only 3 left in Stock)</span></p>
-            <hr>
-            <p class="price">$19.99</p>
-            <p> <span>Qty:</span> <input class="qty" type="text" value="1"> </p>
-            <a class="button expanded" href="checkout.html">Add to Cart</a>
-          </div>
-          <p class="shipping">Contact us for shipping costs &amp; Return</p>
+  <!-- OFF CANVAS ASIDE ================================================================================================================================================ -->
+  <!-- In the off-canvas DIV Listen!es everything needed in the side appearing menu -->
+  <aside class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
+    <!-- Use data-transition="overlap" to overlap the off-canvas on the page-->
+    <div class="grid-container-fluid">
+      <div class="grid-x grid-padding-x grid-padding-y align-center align-middle">
+        <!-- Empty cell/s used  for spacing-->
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell">
+          <ul class="multilevel-accordion-menu vertical menu text-center" data-accordion-menu>
+            <li><input type="search" placeholder="Search"></li>
+            <li><a href="./">Home</a></li>
+            <li><a href="products.html">Products</a>
+              <ul class="menu vertical sublevel-1">
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html">About</a>
+            </li>
+            <li><a href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <button class="close-button" aria-label="Close alert" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- Empty cell/s used  for spacing-->
+        <div class="cell shrink">
+          <ul class="menu text-center">
+            <li><a href="#" target="blank"><i id="offCanvasicon" class="fi fi-social-youtube" aria-hidden="true"></i>
+                <p class="show-for-sr">Youtube link icon</p>
+              </a>
+            </li>
+            <li><a href="#" target="blank"><i id="offCanvasicon" class="fi fi-social-facebook"></i>
+                <p class="show-for-sr">Facebook link icon</p>
+              </a>
+            </li>
+            <li><a href=#" target="blank"><i id="offCanvasicon" class="fi fi-social-instagram"></i>
+                <p class="show-for-sr">Instagram link icon</p>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-  </article>
+  </aside>
+  <!-- END OFF CANVAS ASIDE ================================================================================================================================================ -->
 
+
+  <!-- OFF CANVAS CONTENT (Whole website)================================================= -->
+  <div class="off-canvas-content" data-off-canvas-content>
+    <!--Sticky navbar with javascript and search bar-->
+    <nav>
+      <!-- Mobile top bar ????????????????????????????????????????????????????????????????????????????????????????????? -->
+      <div class="top-bar" data-responsive-toggle="desktop-menu" data-hide-for="medium">
+        <div class="top-bar-left">
+          <div class="grid-container-fluid">
+            <div class="grid-x grid-padding-y align-justify align-middle">
+              <div class="cell small-1">
+                <button type="button" data-toggle="offCanvas"><i class="fi fi-list"></i>
+                </button>
+              </div>
+              <div class="text-center">
+                <h4>The Garden</h4>
+              </div>
+              <!-- Empty cell/s used  for spacing  THIS CELL IS NEEDED TO CENTER THE logo -->
+              <div class="cell small-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END Mobile top bar ????????????????????????????????????????????????????????????????????????????????????????? -->
+
+      <div class="top-bar" id="desktop-menu">
+        <div class="top-bar-left">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <!--<li class="menu-text">Georges Garden</li>-->
+            <li>
+              <button type="button" data-toggle="offCanvas">
+                <i class="fi fi-list" aria-hidden="true"></i>
+              </button>
+            </li>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li><a href="products.html">Products</a>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="menu">
+            <li><input class="search" type="search" placeholder="Search"></li>
+            <li><button type="button" class="button">Search</button></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Carousel of images-->
+    <div class="orbit show-for-medium" role="region" aria-label="Favorite Space Pictures" data-orbit
+      data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+      <ul class="orbit-container">
+        <button class="orbit-previous z-control-2"><span class="show-for-sr">Previous
+            Slide</span>&#9664;&#xFE0E;</button>
+        <button class="orbit-next z-control-2"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+        <li class="is-active orbit-slide">
+          <img class="orbit-image" src="images/image1_2k.jpg" alt="Plant">
+        </li>
+        <li class="orbit-slide">
+          <img class="orbit-image" src="images/image2_2k.jpg" alt="Plant">
+        </li>
+        <li class="orbit-slide">
+          <img class="orbit-image" src="images/image3_2k.jpg" alt="Plant">
+        </li>
+      </ul>
+      <nav class="orbit-bullets">
+        <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span
+            class="show-for-sr">Current Slide</span></button>
+        <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+        <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+      </nav>
+    </div>
+    <br>
+    <article class="grid-container">
+      <div class="grid-x grid-margin-x">
+        <div class="cell align-center">
+          <div class="product-details column medium-6 center-text-for-small-only">
+            <h1>Product Name</h1>
+            <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id magna ac
+              quam semper.deta</p>
+            <div class="grid-x">
+              <div class="cell small-12 large-6">
+                <h6 class="product-color-title">Colour</h6>
+                <form class="product-option-selection">
+                  <input type="radio" name="radios" value="red" id="radio1" checked>
+                  <label for="radio1" class=" dark-hollow expand"><img src="images/lav_mina_opt.jpg"
+                      alt="Plant" /></label>
+                  <input type="radio" name="radios" value="blue" id="radio2">
+                  <label for="radio2" class=" dark-hollow expand"><img src="images/purple_mina_opt.jpg"
+                      alt="Plant" /></label>
+                  <input type="radio" name="radios" value="yellow" id="radio3">
+                  <label for="radio3" class=" dark-hollow expand"><img src="images/yellow_mina_opt.jpg"
+                      alt="Plant" /></label>
+                  <input type="radio" name="radios" value="orange" id="radio4">
+                  <label for="radio4" class=" dark-hollow expand"><img src="images/chamo_mina_opt.jpg"
+                      alt="Plant" /></label>
+                </form>
+              </div>
+              <div class="cell small-12 large-6">
+                <h6 class="product-color-title">Size</h6>
+                <form class="product-option-selection">
+                  <select>
+                    <option value="husker">Small</option>
+                    <option value="starbuck">Medium</option>
+                    <option value="hotdog">Large</option>
+                    <option value="apollo">X-Large</option>
+                    <option value="apollo">XX-Large</option>
+                  </select>
+                </form>
+              </div>
+            </div>
+            <div class="product-details-add-to-cart">
+              <p><span class="in-stock">In Stock</span> <span class="dim-text">(Only 3 left in Stock)</span></p>
+              <hr>
+              <p class="price">$19.99</p>
+              <p> <span>Qty:</span> <input class="qty" type="text" value="1"> </p>
+              <a class="button expanded" href="checkout.html">Add to Cart</a>
+            </div>
+            <p class="shipping">Contact us for shipping costs &amp; Return</p>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
   <!--Footer-->
   <footer class="marketing-site-footer">
     <div class="grid-x medium-unstack">
