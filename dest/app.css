@@ -75,6 +75,9 @@ hr {
   color: #904099;
   font-size: 2rem; }
 
+#offCanvas .fi-social-youtube, #offCanvas .fi-social-facebook, #offCanvas .fi-social-instagram {
+  color: #46114D; }
+
 /*Navbar controls*/
 .scrollhide-nav {
   position: fixed;
