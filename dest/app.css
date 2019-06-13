@@ -7,7 +7,9 @@ h4 {
   font-weight: 600;
   color: #6B9940; }
 
-a, h5, .lead {
+a,
+h5,
+.lead {
   color: #6B9940; }
 
 /*Site wide button controllers using variables*/
@@ -36,15 +38,22 @@ hr {
   z-index: 1; }
 
 /*icon styles*/
-.fi-social-facebook, .fi-shopping-cart, .fi-map:before {
+.fi-social-facebook,
+.fi-shopping-cart,
+.fi-map:before {
   color: #6B9940;
   font-size: 2rem; }
 
-.fi-social-youtube, .fi-star, .fi-social-instagram {
+.fi-social-youtube,
+.fi-star,
+.fi-social-instagram {
   color: #fff;
   font-size: 2rem; }
 
-.fi-social-twitter, .fi-share, .fi-social-pinterest, .fi-mail:before {
+.fi-social-twitter,
+.fi-share,
+.fi-social-pinterest,
+.fi-mail:before {
   color: #ADE577;
   font-size: 2rem; }
 
@@ -63,13 +72,17 @@ hr {
   .scrollhide-nav.hidden {
     transform: translateY(-100%); }
 
-.dropdown li a, .menuitem a, .menu-text {
+.dropdown li a,
+.menuitem a,
+.menu-text {
   color: #fff !important; }
 
 .dropdown li a:hover {
   color: #904099 !important; }
 
-.top-bar, .top-bar-left, .top-bar ul {
+.top-bar,
+.top-bar-left,
+.top-bar ul {
   background-color: #46114D !important; }
 
 /*Footer controls - large display*/
@@ -109,7 +122,8 @@ hr {
 .marketing-site-footer-bottom {
   background: #46114d;
   padding: 1rem 0; }
-  .marketing-site-footer-bottom p, .marketing-site-footer-bottom .menu {
+  .marketing-site-footer-bottom p,
+  .marketing-site-footer-bottom .menu {
     margin-bottom: 0; }
   .marketing-site-footer-bottom .marketing-site-footer-bottom-links {
     justify-content: flex-end; }

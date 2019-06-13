@@ -5,7 +5,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Garden Center</title>
-  <link rel="stylesheet" href="dest/foundation.min.css">
+ <!--<link rel="stylesheet" href="dest/foundation.min.css">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation.min.css">
   <link rel="stylesheet" href="dest/app.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
   <link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet'
@@ -13,12 +14,95 @@
 </head>
 
 <body>
+
+  <!-- OFF CANVAS ASIDE ================================================================================================================================================ -->
+  <!-- In the off-canvas DIV Listen!es everything needed in the side appearing menu -->
+  <aside class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
+      <!-- Use data-transition="overlap" to overlap the off-canvas on the page-->
+      <div class="grid-container-fluid">
+        <div class="grid-x grid-padding-x grid-padding-y align-center align-middle">
+          <!-- Empty cell/s used  for spacing-->
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell">
+              <ul class="multilevel-accordion-menu vertical menu text-center" data-accordion-menu>
+                <li><input type="search" placeholder="Search"></li>
+                <li><a href="./">Home</a></li>
+                <li><a href="listen.html">Listen</a>
+                  <!--<ul class="menu vertical sublevel-1">
+                    <li><a href="#">Sub-item 1</a></li>
+                    <li><a href="#">Sub-item 2</a></li>
+                    <li><a href="#">Sub-item 2</a></li>
+                    <li><a href="#">Sub-item 2</a></li>
+                  </ul>-->
+                </li>
+                <li><a href="products.html">Products</a>
+                  <ul class="menu vertical sublevel-1">
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                  </ul>
+                </li>
+                <li><a href="about.html">About</a>
+                  <!--<ul class="menu vertical sublevel-1">
+                    <li><a href="#">Sub-item 1</a></li>
+                    <li><a href="#">Sub-item 2</a></li>
+                    <li><a href="#">Sub-item 2</a></li>
+                    <li><a href="#">Sub-item 2</a></li>
+                  </ul>-->
+                </li>
+                <li><a href="contact.html">Contact</a>
+                  <!--<ul class="menu vertical sublevel-1">
+                    <li><a href="#">Address</a></li>
+                    <li><a href="#">Contact Form</a></li>
+                  </ul>-->
+                </li>
+              </ul>
+              <button class="close-button" aria-label="Close alert" type="button" data-close>
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          <!-- Empty cell/s used  for spacing-->
+          <div class="cell"></div>
+          <div class="cell shrink">
+            <ul class="menu text-center">
+              <li><a href="#" target="blank"><i class="fab fa-facebook-f fa-1x"></i>
+                  <p class="show-for-sr">Facebook link icon</p>
+                </a>
+              </li>
+              <li><a href="#" target="blank"><i class="fab fa-twitter fa-1x"></i>
+                  <p class="show-for-sr">Twitter link icon</p>
+                </a>
+              </li>
+              <li><a href=#" target="blank"><i class="fab fa-instagram fa-1x"></i>
+                  <p class="show-for-sr">Instagram link icon</p>
+                </a>
+              </li>
+              <<!--li><a href="https://www.snapchat.com/" target="blank"><i class="fab fa-snapchat-ghost fa-1x"></i>
+                  <p class="show-for-sr">Snapchat link icon</p>
+                </a>
+              </li>-->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- END OFF CANVAS ASIDE ================================================================================================================================================ -->
+  
+
+  <!-- OFF CANVAS CONTENT (Whole website)================================================= -->
+  <!-- In the off-canvas-content DIV goes the whole page content -->
+  <div class="off-canvas-content" data-off-canvas-content>
   <!--Sticky navbar with javascript and search bar-->
   <nav class="scrollhide-nav z-control">
     <div class="top-bar">
       <div class="top-bar-left">
         <ul class="dropdown menu" data-dropdown-menu>
-          <li class="menu-text">Georges Garden</li>
+          <!--<li class="menu-text">Georges Garden</li>-->
+          <li>    
+            <button type="button" data-toggle="offCanvas">
+                <i class="fi fi-list" aria-hidden="true"></i> 
+            </button>
+          </li>
           <li>
             <a href="index.html">Home</a>
           </li>
@@ -26,6 +110,10 @@
           </li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <!--<ul class="menu">
+            <li><input type="search" placeholder="Search"></li>
+            <li><button type="button" class="button">Search</button></li>
+          </ul>-->
         </ul>
       </div>
       <div class="top-bar-right">
@@ -36,6 +124,7 @@
       </div>
     </div>
   </nav>
+
 
 
   <!--Carousel of images-->
@@ -218,7 +307,7 @@
       </div>
     </div>
   </footer>
-
+</div>
 
   <script src="js/vendor/jquery.js"></script>
   <script src="js/vendor/foundation.min.js"></script>
