@@ -25,10 +25,6 @@ button:hover {
   background-color: $senary-color !important;
 }
 
-.dropdown-menu button {
-  background-color: $quaternary-color !important;
-}
-
 .is-active {
   background-color: $tertiary-color !important;
 }
@@ -112,6 +108,10 @@ hr {
 
 .dropdown li a:hover {
   color: $senary-color !important;
+}
+
+.dropdown-menu button {
+  background-color: $quaternary-color !important;
 }
 
 .top-bar,
