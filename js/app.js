@@ -1,4 +1,4 @@
-$(document).foundation()
+$(document).foundation();
 
 //Navbar controls
 var prev = 0;

@@ -15,8 +15,7 @@
 
 <body>
 
-  <!-- OFF CANVAS ASIDE ================================================================================================================================================ -->
-  <!-- In the off-canvas DIV Listen!es everything needed in the side appearing menu -->
+  <!-- OFF CANVAS ASIDE =============================================================================================================================================== -->
   <aside class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
       <!-- Use data-transition="overlap" to overlap the off-canvas on the page-->
       <div class="grid-container-fluid">
@@ -51,7 +50,7 @@
                 </a>
               </li>
               <li><a href="#" target="blank"><i id="offCanvasicon" class="fi fi-social-facebook"></i>
-                  <p class="show-for-sr">Facebook link icon</p>
+                  <p class="show-for-sr">Facebook link ico</p>
                 </a>
               </li>
               <li><a href=#" target="blank"><i id="offCanvasicon" class="fi fi-social-instagram"></i>
@@ -70,28 +69,7 @@
   <!-- In the off-canvas-content DIV goes the whole page content -->
   <div class="off-canvas-content" data-off-canvas-content>
   <!--Sticky navbar with javascript and search bar-->
-  <nav>
-                  <!-- Mobile top bar ????????????????????????????????????????????????????????????????????????????????????????????? -->
-                  <div class="top-bar" data-responsive-toggle="desktop-menu" data-hide-for="medium">
-                      <div class="top-bar-left">
-                        <div class="grid-container-fluid">
-                          <div class="grid-x grid-padding-y align-justify align-middle">
-                            <div class="cell small-1">
-                              <button type="button" data-toggle="offCanvas"><img src="assets/img/icons/+.svg"
-                                  alt="plus button"></button>
-                            </div>
-                            <div class="cell small-10 text-center">
-                                <!--<a href="./"><img id="mobile-logo" src="assets/img/boom_logo_orange.svg" alt="Boom Radio logo"></a>-->
-                                <h4>Welcome to our Garden</h4>
-                        </div>
-                            <!-- Empty cell/s used  for spacing  THIS CELL IS NEEDED TO CENTER THE logo -->
-                            <div class="cell small-1"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- END Mobile top bar ????????????????????????????????????????????????????????????????????????????????????????? -->
-      
+  <nav class="z-control">
     <div class="top-bar" id="desktop-menu">
       <div class="top-bar-left">
         <ul class="dropdown menu" data-dropdown-menu>
@@ -117,12 +95,41 @@
         </ul>
       </div>
     </div>
+
+    <div class="title-bar" data-responsive-toggle="desktop-menu" data-hide-for="medium">
+      <div class="title-bar-left">
+          <button type="button" data-toggle="offCanvas"><i class="fi fi-list" aria-hidden="true"></i></button>
+      </div>
+    </div>
+
   </nav>
 
+  <!--<div class="grid-container-fluid">
+    <div class="grid-x grid-padding-y align-justify align-middle">      </div>
+  </div>-->
 
+  <!--<div class="title-bar" data-responsive-toggle="desktop-menu" data-hide-for="medium">
+    <div class="title-bar-left">
+      <div class="grid-container-fluid">
+        <div class="grid-x grid-padding-y align-justify align-middle">
+          <div class="cell small-1">
+            <button type="button" data-toggle="offCanvas"><i class="fi fi-list" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>-->
+
+<div class="grid-container-fluid">
+    <div class="grid-x grid-padding-y align-justify align-middle"> 
+        <div class="cell text-center show-for-small-only">
+            <h2>Welcome to George's Garden</h2>
+            <h3>Our Newest Products</h3>
+            <hr>
+        </div>  
 
   <!--Carousel of images-->
-  <div class="show-for-medium orbit" role="region" aria-label="Favorite Space Pictures" data-orbit
+  <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit
     data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
     <ul class="orbit-container">
       <button class="orbit-previous z-control-2"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
@@ -144,8 +151,9 @@
       <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
     </nav>
   </div>
+
   <br>
-  <div class="text-center">
+  <div class="cell text-center show-for-medium">
     <h2>Welcome to George's Garden</h2>
     <h3>Our Newest Products</h3>
     <hr>
