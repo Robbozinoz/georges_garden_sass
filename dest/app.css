@@ -19,6 +19,11 @@ button {
 button:hover {
   background-color: #904099 !important; }
 
+.dropdown-menu button {
+  background-color: #46114D;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem; }
+
 .is-active {
   background-color: #ADE577 !important; }
 
@@ -50,7 +55,7 @@ hr {
   color: #fff;
   font-size: 2rem; }
 
-.fi-social-twitter, .fi-list,
+.fi-social-twitter,
 .fi-share,
 .fi-social-pinterest,
 .fi-mail:before {
@@ -60,7 +65,7 @@ hr {
 .fi-list {
   color: #ADE577;
   background-color: #46114D;
-  font-size: 2rem; }
+  font-size: 2.5rem; }
 
 .fi-telephone:before {
   color: #904099;
