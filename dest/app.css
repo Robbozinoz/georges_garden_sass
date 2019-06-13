@@ -7,14 +7,13 @@ h4 {
   font-weight: 600;
   color: #6B9940; }
 
+a:focus, a:hover {
+  color: #46114D; }
+
 a,
 h5,
 .lead {
   color: #6B9940; }
-  a :hover,
-  h5 :hover,
-  .lead :hover {
-    color: #46114D; }
 
 /*Site wide button controllers using variables*/
 button {
@@ -108,9 +107,6 @@ hr {
 
 .multilevel-accordion-menu li input {
   margin-bottom: 1rem; }
-
-.is-submenu-item a {
-  color: #46114D; }
 
 /*Footer controls - large display*/
 .marketing-site-footer {

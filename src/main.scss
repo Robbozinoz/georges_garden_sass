@@ -9,15 +9,15 @@ h4 {
   color: $secondary-color;
 }
 
+a:focus, a:hover {
+  color: $quaternary-color
+}
+
 a,
 h5,
 .lead {
   color: $secondary-color;
-
-  :hover {
-    color: $quaternary-color;
   }
-}
 
 
 /*Site wide button controllers using variables*/
@@ -139,12 +139,6 @@ hr {
 .multilevel-accordion-menu li input {
   margin-bottom: 1rem;
 }
-
-.is-submenu-item a {
-  color: $quaternary-color
-}
-
-
 
 /*Footer controls - large display*/
 .marketing-site-footer {
