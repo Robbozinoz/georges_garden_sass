@@ -17,7 +17,7 @@ h5,
 
 
 /*Site wide button controllers using variables*/
-button, .search {
+button {
   background-color: $secondary-color !important;
 }
 
@@ -35,6 +35,11 @@ a.button {
 
 a.button:hover {
   background-color: $senary-color !important;
+}
+
+.close-button {
+  background-color: #e6e6e6;
+  color: $quaternary-color;
 }
 
 hr {
@@ -110,7 +115,7 @@ hr {
   color: $senary-color !important;
 }
 
-.dropdown-menu button {
+.top-bar-left ul li button {
   background-color: $quaternary-color !important;
 }
 

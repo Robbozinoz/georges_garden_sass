@@ -13,7 +13,7 @@ h5,
   color: #6B9940; }
 
 /*Site wide button controllers using variables*/
-button, .search {
+button {
   background-color: #6B9940 !important; }
 
 button:hover {
@@ -27,6 +27,10 @@ a.button {
 
 a.button:hover {
   background-color: #904099 !important; }
+
+.close-button {
+  background-color: #e6e6e6;
+  color: #46114D; }
 
 hr {
   border-bottom: 1px solid #c951d9; }
@@ -86,7 +90,7 @@ hr {
 .dropdown li a:hover {
   color: #904099 !important; }
 
-.dropdown-menu button {
+.top-bar-left ul li button {
   background-color: #46114D !important; }
 
 .top-bar,
