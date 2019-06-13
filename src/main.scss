@@ -73,6 +73,12 @@ hr {
   font-size: $primary-font-size;
 }
 
+.fi-list {
+  color: $tertiary-color;
+  background-color: $quaternary-color;
+  font-size: $primary-font-size;
+}
+
 .fi-telephone:before {
   color: $senary-color;
   font-size: $primary-font-size;

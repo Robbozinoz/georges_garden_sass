@@ -57,6 +57,11 @@ hr {
   color: #ADE577;
   font-size: 2rem; }
 
+.fi-list {
+  color: #ADE577;
+  background-color: #46114D;
+  font-size: 2rem; }
+
 .fi-telephone:before {
   color: #904099;
   font-size: 2rem; }
