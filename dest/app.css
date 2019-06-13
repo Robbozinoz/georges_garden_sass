@@ -34,7 +34,7 @@ a.button:hover {
     background-color: #e6e6e6; }
 
 aside {
-  background: #fff; }
+  background: #fff !important; }
 
 hr {
   border-bottom: 1px solid #c951d9; }
