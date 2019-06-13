@@ -126,13 +126,9 @@ hr {
   color: $senary-color !important;
 }
 
-.top-bar-left ul li button {
-  background-color: $quaternary-color !important;
-}
-
 .top-bar,
 .top-bar-left,
-.top-bar ul {
+.top-bar ul, .top-bar-left ul li button, .top-bar-left div div div button {
   background-color: $quaternary-color !important;
 }
 
