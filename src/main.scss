@@ -17,7 +17,7 @@ h5,
 
 
 /*Site wide button controllers using variables*/
-button {
+button, .search {
   background-color: $secondary-color !important;
 }
 
@@ -26,7 +26,7 @@ button:hover {
 }
 
 .dropdown-menu button {
-  background-color: $quaternary-color;
+  background-color: $quaternary-color !important;
 }
 
 .is-active {
@@ -80,7 +80,7 @@ hr {
 .fi-list {
   color: $tertiary-color;
   background-color: $quaternary-color;
-  margin: 0 1rem 0 1rem;
+  margin: 0 1rem 0 0;
   font-size: 2.5rem;
 }
 
