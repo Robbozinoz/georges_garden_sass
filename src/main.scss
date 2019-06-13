@@ -45,7 +45,7 @@ a.button:hover {
 }
 
 aside {
-  background-color: $primary-color;
+  background: $primary-color;
 }
 
 hr {
@@ -76,10 +76,7 @@ hr {
   font-size: $primary-font-size;
 }
 
-.fi-social-twitter,
-.fi-share,
-.fi-social-pinterest,
-.fi-mail:before {
+.fi-social-twitter, .fi-share, .fi-social-pinterest, .fi-mail:before {
   color: $tertiary-color;
   font-size: $primary-font-size;
 }
@@ -96,11 +93,9 @@ hr {
   font-size: $primary-font-size;
 }
 
-#offCanvas {
-  .fi-social-youtube, .fi-social-facebook, .fi-social-instagram {
+#offCanvasicon {
     color:  $quaternary-color;
   }
-}
 
 /*Navbar controls*/
 

@@ -34,7 +34,7 @@ a.button:hover {
     background-color: #e6e6e6; }
 
 aside {
-  background-color: #fff; }
+  background: #fff; }
 
 hr {
   border-bottom: 1px solid #c951d9; }
@@ -58,10 +58,7 @@ hr {
   color: #fff;
   font-size: 2rem; }
 
-.fi-social-twitter,
-.fi-share,
-.fi-social-pinterest,
-.fi-mail:before {
+.fi-social-twitter, .fi-share, .fi-social-pinterest, .fi-mail:before {
   color: #ADE577;
   font-size: 2rem; }
 
@@ -75,7 +72,7 @@ hr {
   color: #904099;
   font-size: 2rem; }
 
-#offCanvas .fi-social-youtube, #offCanvas .fi-social-facebook, #offCanvas .fi-social-instagram {
+#offCanvasicon {
   color: #46114D; }
 
 /*Navbar controls*/
