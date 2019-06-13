@@ -38,8 +38,14 @@ a.button:hover {
 }
 
 .close-button {
-  background-color: #e6e6e6;
   color: $quaternary-color;
+  span {
+    background-color: #e6e6e6;
+  }
+}
+
+aside {
+  background-color: $primary-color;
 }
 
 hr {

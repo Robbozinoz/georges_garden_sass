@@ -29,8 +29,12 @@ a.button:hover {
   background-color: #904099 !important; }
 
 .close-button {
-  background-color: #e6e6e6;
   color: #46114D; }
+  .close-button span {
+    background-color: #e6e6e6; }
+
+aside {
+  background-color: #fff; }
 
 hr {
   border-bottom: 1px solid #c951d9; }
